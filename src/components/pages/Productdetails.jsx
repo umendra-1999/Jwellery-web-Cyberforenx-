@@ -56,7 +56,13 @@ const Productdetails = () => {
   return (
     <>
       <Header />
-      <div className='bg-rose-100'>
+        <section className="relative bg-[url('https://whitegold.money/content/cms/image-68-compressed-scaled.jpg')] bg-cover bg-center h-64 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/50"></div>
+        <h1 className="relative text-white text-4xl md:text-5xl font-bold">
+        Products
+        </h1>
+      </section>
+      <div className='bg-rose-100 mt-0.5'>
       <div className="p-8 rounded-4xl shadow-2xl bg-gray-300 w-full max-w-screen-xl mx-auto">
         <img src={product.img} alt={product.name} className="mb-6 w-full md:w-1/2 mx-auto" />
         <h2 className="text-2xl font-bold mb-2 text-center">{product.name}</h2>

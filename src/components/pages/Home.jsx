@@ -6,6 +6,12 @@ const Home = () => {
   return (
     <>
       <Header />
+        <section className="relative bg-[url('https://whitegold.money/content/cms/image-68-compressed-scaled.jpg')] bg-cover bg-center h-64 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/50"></div>
+        <h1 className="relative text-white text-4xl md:text-5xl font-bold">
+          Home
+        </h1>
+      </section>
       
       <div className='flex flex-col md:flex-row bg-rose-200 p-4 md:p-8 gap-6'>
         <img

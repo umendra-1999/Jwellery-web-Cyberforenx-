@@ -6,26 +6,26 @@ import Footer from '../../reusablecomponents/Footer';
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
 
-  // Load cart items from localStorage once on component mount
+  
   useEffect(() => {
     const savedCart = JSON.parse(localStorage.getItem('cartItems')) || [];
     setCartItems(savedCart);
   }, []);
 
-  // Calculate total price
+  
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * (item.quantity || 1),
     0
   );
 
-  // Remove item handler
+  
   const handleRemove = (id) => {
     const updatedCart = cartItems.filter(item => item.id !== id);
     setCartItems(updatedCart);
     localStorage.setItem('cartItems', JSON.stringify(updatedCart));
   };
 
-  // Increase quantity handler
+  
   const handleIncreaseQuantity = (id) => {
     const updatedCart = cartItems.map(item => {
       if(item.id === id) {
@@ -50,6 +50,12 @@ const Cart = () => {
   return (
     <>
     <Header/>
+      <section className="relative bg-[url('https://whitegold.money/content/cms/image-68-compressed-scaled.jpg')] bg-cover bg-center h-64 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/50"></div>
+        <h1 className="relative text-white text-4xl md:text-5xl font-bold">
+          Cart
+        </h1>
+      </section>
     <div className='bg-rose-100'>
     <div className="p-8 max-w-4xl mx-auto ">
       <h1 className="text-3xl font-bold mb-6">Your Cart</h1>
