@@ -34,7 +34,7 @@ const Header = () => {
       <NavLink 
         to="/" 
         className={({ isActive }) => 
-          isActive ? "text-white font-bold" : "text-gray-700 font-medium hover:text-white"
+          isActive ? "text-red-600 font-bold" : "text-gray-700 font-medium hover:text-white"
         }
       >
     {/* in this the navlink is used for showing the active link means whic link is active they will highlight  */}
@@ -45,7 +45,7 @@ const Header = () => {
       <NavLink 
         to="/products" 
         className={({ isActive }) => 
-          isActive ? "text-white font-bold" : "text-gray-700 font-medium hover:text-white"
+          isActive ? "text-red-600 font-bold" : "text-gray-700 font-medium hover:text-white"
         }
       >
         Products
@@ -55,7 +55,7 @@ const Header = () => {
       <NavLink 
         to="/about" 
         className={({ isActive }) => 
-          isActive ? "text-white font-bold" : "text-gray-700 font-medium hover:text-white"
+          isActive ? "text-red-600 font-bold" : "text-gray-700 font-medium hover:text-white"
         }
       >
         About
@@ -65,7 +65,7 @@ const Header = () => {
       <NavLink 
         to="/contact" 
         className={({ isActive }) => 
-          isActive ? "text-white font-bold" : "text-gray-700 font-medium hover:text-white"
+          isActive ? "text-red-600 font-bold" : "text-gray-700 font-medium hover:text-white"
         }
       >
         Contact
@@ -75,7 +75,7 @@ const Header = () => {
       <NavLink 
         to="/cart" 
         className={({ isActive }) => 
-          isActive ? "text-white font-bold" : "text-gray-700 font-medium hover:text-white"
+          isActive ? "text-red-600 font-bold" : "text-gray-700 font-medium hover:text-white"
         }
       >
         Cart
