@@ -56,7 +56,7 @@ const Home = () => {
       </div>
 
       <h1 className='p-6 text-center text-3xl md:text-4xl font-bold italic bg-rose-300'>
-        Trending Now❤️
+        # Trending Now
       </h1>
       
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 bg-rose-200 p-4 md:p-10 place-items-center'>

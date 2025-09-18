@@ -67,7 +67,7 @@ const Contact = () => {
               ></textarea>
             </div>
             <button
-                
+              onClick={() => alert('Submiited')}
               type="submit"
               className="bg-yellow-600 text-white px-6 py-3 rounded-md shadow hover:bg-yellow-700 transition"
             >

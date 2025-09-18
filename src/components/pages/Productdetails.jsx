@@ -32,11 +32,12 @@ const Productdetails = () => {
   if (!product) return <div>Product Not Found</div>;
 
   const handleAddToCart = () => {
-    
+    alert("Item added to cart!");
     const Cart = JSON.parse(localStorage.getItem('cartItems')) || [];
     
     
     const ProductIndex = Cart.findIndex(item => item.id === product.id);
+    
 
     if (ProductIndex !== -1) {
       
@@ -71,9 +72,8 @@ const Productdetails = () => {
           <button 
             onClick={handleAddToCart}
             className="bg-rose-600 text-white px-6 py-2 rounded-lg hover:bg-rose-700 transition"
-            aria-label="Add to Cart"
-          >
-            + Add to Cart
+            aria-label="Add to Cart">
+            Add to Cart
           </button>
         </div>
         <p className="mb-2"><span className="font-bold text-xl">Metal Details:</span><br />{product.Metalsdetail}</p>
